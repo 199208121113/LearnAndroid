@@ -1,6 +1,9 @@
-package com.xdf.learn.base;
+package com.xdf.learn.util;
 
 import android.app.Activity;
+
+import com.xdf.learn.annotation.ContentView;
+import com.xdf.learn.annotation.InjectView;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;

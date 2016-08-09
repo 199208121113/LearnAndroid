@@ -1,4 +1,4 @@
-package com.xdf.learn.base;
+package com.xdf.learn.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
