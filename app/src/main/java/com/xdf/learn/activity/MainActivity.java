@@ -1,8 +1,10 @@
-package com.xdf.learn;
+package com.xdf.learn.activity;
 
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+
+import com.xdf.learn.R;
 import com.xdf.learn.adapter.HomeAdapter;
 import com.xdf.learn.base.BaseActivity;
 import com.xdf.learn.annotation.ContentView;
