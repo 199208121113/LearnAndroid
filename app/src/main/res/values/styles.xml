@@ -1,8 +1,11 @@
 <resources>
 
+    <style name="AppBaseTheme" parent="android:Theme.Light"/>
+
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="android:Theme.Light">
+    <style name="AppTheme" parent="AppBaseTheme">
         <item name="android:windowNoTitle">true</item>
+        <item name="android:listDivider">@drawable/divider_bg</item>
     </style>
 
 </resources>
