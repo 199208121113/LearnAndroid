@@ -18,7 +18,6 @@ public class MainActivity extends BaseActivity{
 
     private HomeAdapter adapter;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

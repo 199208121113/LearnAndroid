@@ -3,8 +3,16 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_toolbar"
+        android:title="AppTitle"
+        android:subtitle="SubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
     <ListView
         android:id="@+id/id_act_test_list"
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 </LinearLayout>

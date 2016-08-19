@@ -9,4 +9,8 @@
     <color name="color3">#ff6cff50</color>
     <color name="color4">#ff1a38ff</color>
     <color name="color5">#fffffcf3</color>
+
+    <color name="col_545454">#545454</color>
+    <color name="col_fe9abd">#fe9abd</color>
+    <color name="white">#ffffffff</color>
 </resources>
