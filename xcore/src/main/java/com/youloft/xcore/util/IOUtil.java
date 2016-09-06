@@ -8,7 +8,7 @@ import java.io.File;
 public class IOUtil {
 
     public static boolean mkDir(String path){
-        if (StringUtil.isEmpty(path)){
+        if (StringUtils.isEmpty(path)){
             return false;
         }
         if(path.endsWith("/")){
