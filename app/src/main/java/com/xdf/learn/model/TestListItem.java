@@ -6,12 +6,15 @@ import com.youloft.xcore.inter.AdapterEntity;
  * Created by xdf on 16-8-18.
  */
 public class TestListItem implements AdapterEntity {
+
+    private int itemId;
     private String iteName;
 
     public TestListItem() {
     }
 
-    public TestListItem(String iteName) {
+    public TestListItem(int itemId, String iteName) {
+        this.itemId = itemId;
         this.iteName = iteName;
     }
 
@@ -21,5 +24,13 @@ public class TestListItem implements AdapterEntity {
 
     public void setIteName(String iteName) {
         this.iteName = iteName;
+    }
+
+    public int getItemId() {
+        return itemId;
+    }
+
+    public void setItemId(int itemId) {
+        this.itemId = itemId;
     }
 }
