@@ -36,6 +36,17 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait" />
 
+        <!--View事件分发测试-->
+        <activity
+            android:name=".activity.ViewEventTestActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!--ViewGrooup事件分发测试-->
+        <activity
+            android:name=".activity.ViewGroupEventTestActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
 
     </application>
 
