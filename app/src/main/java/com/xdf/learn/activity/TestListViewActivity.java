@@ -74,6 +74,8 @@ public class TestListViewActivity extends SupperActivity implements View.OnClick
     private static final int VIEW_GROUP_EVENT = ATOMIC_INTEGER.getAndIncrement();
     //应用内换皮肤设置
     private static final int CHANGE_SKIN = ATOMIC_INTEGER.getAndIncrement();
+    //使用腾讯浏览服务X5内核WebView
+    private static final int WEBVIEW_TEST = ATOMIC_INTEGER.getAndIncrement();
 
     private void loadTestData() {
         adapter.addItem(new TestListItem(ACTIVITY_LIFE_CYCLE, "Activity生命周期"), null);
@@ -81,6 +83,7 @@ public class TestListViewActivity extends SupperActivity implements View.OnClick
         adapter.addItem(new TestListItem(VIEW_EVENT, "View事件机制研究"), null);
         adapter.addItem(new TestListItem(VIEW_GROUP_EVENT, "ViewGroup事件机制研究"), null);
         adapter.addItem(new TestListItem(CHANGE_SKIN, "应用内换肤"), null);
+        adapter.addItem(new TestListItem(WEBVIEW_TEST, "腾讯浏览服务X5内核WebView"), null);
         adapter.notifyDataSetChanged();
     }
 
@@ -105,6 +108,8 @@ public class TestListViewActivity extends SupperActivity implements View.OnClick
             startActivity(ViewGroupEventTestActivity.createIntent(this));
         } else if (itemId == CHANGE_SKIN){
             startActivity(SkinManagerTestActivity.createIntent(this));
+        } else if (itemId == WEBVIEW_TEST){
+            startActivity(WebViewTestActivity.createIntent(this));
         }
     }
 

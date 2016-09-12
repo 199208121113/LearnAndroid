@@ -10,7 +10,7 @@
         android:gravity="center"
         />
 
-    <WebView
+    <com.tencent.smtt.sdk.WebView
         android:id="@+id/id_act_web_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
