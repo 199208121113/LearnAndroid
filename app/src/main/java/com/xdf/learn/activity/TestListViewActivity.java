@@ -20,6 +20,7 @@ import com.xdf.learn.base.SupperActivity;
 import com.xdf.learn.http.DemoService;
 import com.xdf.learn.model.TestListItem;
 import com.youloft.xcore.util.LogUtil;
+import com.zhy.changeskin.SkinManager;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -54,7 +55,7 @@ public class TestListViewActivity extends SupperActivity implements View.OnClick
             decorView.setSystemUiVisibility(option);
             getWindow().setStatusBarColor(Color.TRANSPARENT);
         }
-
+        SkinManager.getInstance().changeSkin("red");
         addHeaderView();
         adapter = new TestListAdapter(this);
         mListView.setAdapter(adapter);

@@ -9,7 +9,7 @@
         android:layout_height="50dp"
         android:gravity="center"
         android:background="@color/colorAccent"
-        android:textColor="@color/white"
+        android:textColor="@color/skin_test_tv_color_white"
         android:tag="skin:skin_test_tv_color:textColor"
         android:text="换肤测试View"/>
 
