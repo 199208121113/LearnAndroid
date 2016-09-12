@@ -5,13 +5,13 @@ import android.os.Handler;
 
 import com.xdf.learn.R;
 import com.xdf.learn.annotation.ContentView;
-import com.xdf.learn.base.BaseActivity;
+import com.xdf.learn.base.SupperActivity;
 
 /**
  * Created by xdf on 16-8-18.
  */
 @ContentView(R.layout.act_load_layout)
-public class LoadingActivity extends BaseActivity {
+public class LoadingActivity extends SupperActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -9,7 +9,7 @@ import android.view.View;
 import com.xdf.learn.R;
 import com.xdf.learn.annotation.ContentView;
 import com.xdf.learn.annotation.InjectView;
-import com.xdf.learn.base.BaseActivity;
+import com.xdf.learn.base.SupperActivity;
 import com.xdf.learn.view.MyButton;
 import com.youloft.xcore.util.LogUtil;
 
@@ -43,7 +43,7 @@ import com.youloft.xcore.util.LogUtil;
  * Created by xdf on 16-9-9.
  */
 @ContentView(R.layout.act_view_event)
-public class ViewEventTestActivity extends BaseActivity {
+public class ViewEventTestActivity extends SupperActivity {
 
     public static Intent createIntent(Context context) {
         return new Intent(context, ViewEventTestActivity.class);

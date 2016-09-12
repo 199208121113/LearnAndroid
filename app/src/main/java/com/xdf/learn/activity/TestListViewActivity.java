@@ -16,7 +16,7 @@ import com.xdf.learn.R;
 import com.xdf.learn.adapter.TestListAdapter;
 import com.xdf.learn.annotation.ContentView;
 import com.xdf.learn.annotation.InjectView;
-import com.xdf.learn.base.BaseActivity;
+import com.xdf.learn.base.SupperActivity;
 import com.xdf.learn.http.DemoService;
 import com.xdf.learn.model.TestListItem;
 import com.youloft.xcore.util.LogUtil;
@@ -34,7 +34,7 @@ import retrofit2.converter.scalars.ScalarsConverterFactory;
  * Created by xdf on 16-8-18.
  */
 @ContentView(R.layout.act_test_list)
-public class TestListViewActivity extends BaseActivity implements View.OnClickListener, AdapterView.OnItemClickListener {
+public class TestListViewActivity extends SupperActivity implements View.OnClickListener, AdapterView.OnItemClickListener {
     private static final String TAG = TestListViewActivity.class.getSimpleName();
     @InjectView(R.id.id_act_test_list)
     ListView mListView;
@@ -71,12 +71,15 @@ public class TestListViewActivity extends BaseActivity implements View.OnClickLi
     private static final int VIEW_EVENT = ATOMIC_INTEGER.getAndIncrement();
     //ViewGroup的事件分发机制研究
     private static final int VIEW_GROUP_EVENT = ATOMIC_INTEGER.getAndIncrement();
+    //应用内换皮肤设置
+    private static final int CHANGE_SKIN = ATOMIC_INTEGER.getAndIncrement();
 
     private void loadTestData() {
         adapter.addItem(new TestListItem(ACTIVITY_LIFE_CYCLE, "Activity生命周期"), null);
         adapter.addItem(new TestListItem(BASE_ADAPTER, "另类Adapter封装测试"), null);
         adapter.addItem(new TestListItem(VIEW_EVENT, "View事件机制研究"), null);
         adapter.addItem(new TestListItem(VIEW_GROUP_EVENT, "ViewGroup事件机制研究"), null);
+        adapter.addItem(new TestListItem(CHANGE_SKIN, "应用内换肤"), null);
         adapter.notifyDataSetChanged();
     }
 
@@ -99,6 +102,8 @@ public class TestListViewActivity extends BaseActivity implements View.OnClickLi
             startActivity(ViewEventTestActivity.createIntent(this));
         } else if (itemId == VIEW_GROUP_EVENT) {
             startActivity(ViewGroupEventTestActivity.createIntent(this));
+        } else if (itemId == CHANGE_SKIN){
+            startActivity(SkinManagerTestActivity.createIntent(this));
         }
     }
 

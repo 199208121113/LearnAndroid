@@ -8,11 +8,11 @@ import com.xdf.learn.R;
 import com.xdf.learn.adapter.HomeAdapter;
 import com.xdf.learn.annotation.ContentView;
 import com.xdf.learn.annotation.InjectView;
-import com.xdf.learn.base.BaseActivity;
+import com.xdf.learn.base.SupperActivity;
 import com.xdf.learn.view.DividerListItemDecoration;
 
 @ContentView(R.layout.activity_main)
-public class MainActivity extends BaseActivity{
+public class MainActivity extends SupperActivity {
     @InjectView(R.id.id_main_recycle_view)
     RecyclerView mReCycleView;
 

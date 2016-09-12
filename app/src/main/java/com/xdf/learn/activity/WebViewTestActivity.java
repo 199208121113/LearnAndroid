@@ -8,13 +8,13 @@ import android.webkit.WebViewClient;
 import com.xdf.learn.R;
 import com.xdf.learn.annotation.ContentView;
 import com.xdf.learn.annotation.InjectView;
-import com.xdf.learn.base.BaseActivity;
+import com.xdf.learn.base.SupperActivity;
 
 /**
  * Created by xdf on 16-8-19.
  */
 @ContentView(R.layout.act_web_layout)
-public class WebViewTestActivity extends BaseActivity {
+public class WebViewTestActivity extends SupperActivity {
     @InjectView(R.id.id_act_web_view)
     WebView mWebView;
 

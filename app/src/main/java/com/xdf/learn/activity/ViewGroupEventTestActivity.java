@@ -7,7 +7,7 @@ import android.os.Bundle;
 import com.xdf.learn.R;
 import com.xdf.learn.annotation.ContentView;
 import com.xdf.learn.annotation.InjectView;
-import com.xdf.learn.base.BaseActivity;
+import com.xdf.learn.base.SupperActivity;
 import com.xdf.learn.view.MyButton;
 
 /**
@@ -38,7 +38,7 @@ import com.xdf.learn.view.MyButton;
  * Created by xdf on 16-9-9.
  */
 @ContentView(R.layout.act_view_group_event)
-public class ViewGroupEventTestActivity extends BaseActivity {
+public class ViewGroupEventTestActivity extends SupperActivity {
 
     public static Intent createIntent(Context context){
         return new Intent(context,ViewGroupEventTestActivity.class);

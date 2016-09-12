@@ -7,8 +7,6 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import com.xdf.learn.R;
-import com.xdf.learn.annotation.ContentView;
-import com.xdf.learn.base.BaseActivity;
 import com.youloft.xcore.util.LogUtil;
 
 /**

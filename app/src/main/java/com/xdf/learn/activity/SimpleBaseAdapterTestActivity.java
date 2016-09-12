@@ -9,9 +9,7 @@ import com.xdf.learn.R;
 import com.xdf.learn.adapter.SimpleAdapterTestAdapter;
 import com.xdf.learn.annotation.ContentView;
 import com.xdf.learn.annotation.InjectView;
-import com.xdf.learn.base.BaseActivity;
-
-import java.util.List;
+import com.xdf.learn.base.SupperActivity;
 
 /**
  * 另类Adapter封装测试
@@ -19,7 +17,7 @@ import java.util.List;
  * Created by xdf on 16-9-8.
  */
 @ContentView(R.layout.act_simple_adapter_layout)
-public class SimpleBaseAdapterTestActivity extends BaseActivity {
+public class SimpleBaseAdapterTestActivity extends SupperActivity {
 
     public static Intent createIntent(Context context) {
         return new Intent(context, SimpleBaseAdapterTestActivity.class);
